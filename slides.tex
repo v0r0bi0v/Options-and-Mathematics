@@ -1,15 +1,166 @@
-%! Author = vanyavorobiov
-%! Date = 22/07/2024
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Preamble
-\documentclass[11pt]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
 
-% Packages
-\usepackage{amsmath}
+\documentclass{beamer}
+\usepackage[english, russian]{babel}
 
-% Document
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\LQ}{\ensuremath{\mathcal{L}_{\mathbb{Q}_p}}}
+\newcommand{\LZ}{\ensuremath{\mathcal{L}_{\mathbb{Z}_p}}}
+\newcommand{\LQn}{\ensuremath{\mathcal{L}^{(n)}_{\mathbb{Q}_p}}}
+\newcommand{\LZn}{\ensuremath{\mathcal{L}^{(n)}_{\mathbb{Z}_p}}}
+\newcommand{\LQcentralr}{\ensuremath{\mathcal{L}_{\mathbb{Q}_p, n}}}
+\newcommand{\Sbf}{\ensuremath{\mathbf{S}}}
+\newcommand{\rank}{\ensuremath{\mathrm{rank}}}
+\newcommand{\xoo}{\ensuremath{x_{1,1}}}
+\newcommand{\xod}{\ensuremath{x_{1,2}}}
+\newcommand{\xdo}{\ensuremath{x_{2,1}}}
+\newcommand{\xdd}{\ensuremath{x_{2,2}}}
+\newcommand{\yoo}{\ensuremath{y_{1,1}}}
+\newcommand{\yod}{\ensuremath{y_{1,2}}}
+\newcommand{\ydo}{\ensuremath{y_{2,1}}}
+\newcommand{\ydd}{\ensuremath{y_{2,2}}}
+\newcommand{\Wpn}{\ensuremath{\mathcal{W}^{\mathrm{pol}}_n}}
+\newcommand{\Wn}{\ensuremath{\mathcal{W}_n}}
+\newcommand{\Wp}{\ensuremath{\mathcal{W}^{\mathrm{pol}}}}
+\newcommand{\W}{\ensuremath{\mathcal{W}}}
+\newcommand{\Lp}{\ensuremath{\mathcal{L}^{\mathrm{pol}}}}
+\newcommand{\SQ}{\ensuremath{S_{\mathbb{Q}_p}}}
+\newcommand{\SQn}{\ensuremath{S_{\mathbb{Q}_p, n}}}
+\newcommand{\SQr}{\ensuremath{S_{\mathbb{Q}_p, r}}}
+\newcommand{\SQo}{\ensuremath{S_{\mathbb{Q}_p, 1}}}
+\newcommand{\trace}{\ensuremath{\mathrm{trace}}}
+
+\renewcommand{\width}{\ensuremath{\mathrm{width}}}
+\renewcommand{\L}{\ensuremath{\mathcal{L}}}
+\renewcommand{\char}{\ensuremath{\mathrm{char}}}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+    \usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\newtheorem{remark}{Remark}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{theorem*}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{formula}{Formula}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{textpos}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE 1
+%----------------------------------------------------------------------------------------
 \begin{document}
 
 
+%\begin{frame}
+%\titlepage % Print the title page as the first slide
+%\end{frame}
 
-\end{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+
+    \title[Опционы и Математика]{Опционы и Математика} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+
+% Your name
+    \institute[Sber] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+    {
+        \\
+
+        \centering\Large{Ваня Воробьев}\\
+        \vspace{0.5cm}
+        \centering\small{Научный руководитель, доктор физ.-мат. наук, профессор}\\ Алексей Яковлевич Канель-Белов\\
+        \begin{center}
+            \small
+            \href{tel:+79779996957}{+79779996957} | \href{https://t.me/v0r0bi0v}{t.me/v0r0bi0v} | \href{mailto:ievorobev@edu.hse.ru}{ievorobev@edu.hse.ru}
+        \end{center}
+    }
+
+
+    \begin{document}
+
+
+        \begin{frame}
+            \titlepage
+        \end{frame}
+
+
+
+
+    \end{document}
