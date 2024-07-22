@@ -7,7 +7,7 @@ FILENAME="slides"
 pdflatex -interaction=nonstopmode $FILENAME.tex
 
 # delete log files
-rm -f $FILENAME.aux $FILENAME.log $FILENAME.out $FILENAME.bbl $FILENAME.blg $FILENAME.bcf $FILENAME.run.xml $FILENAME.toc
+rm -f $FILENAME.aux $FILENAME.log $FILENAME.out $FILENAME.bbl $FILENAME.blg $FILENAME.bcf $FILENAME.run.xml $FILENAME.toc $FILENAME.snm $FILENAME.nav
 
 # push changes to the repo
 git add ./*
