@@ -18,6 +18,8 @@
 \documentclass{beamer}
 \usepackage[english, russian]{babel}
 
+
+\newcommand{\E}{\ensuremath{\mathbb{E}}}
 \newcommand{\R}{\ensuremath{\mathbb{R}}}
 \newcommand{\Z}{\ensuremath{\mathbb{Z}}}
 \newcommand{\Q}{\ensuremath{\mathbb{Q}}}
@@ -159,7 +161,22 @@
             \titlepage
         \end{frame}
 
+        \begin{frame}{Базовые понятия}
+            \begin{itemize}
+                \item Случайная величина
+            \end{itemize}
+        \end{frame}
 
+        \begin{frame}{Базовые понятия}
+            \begin{itemize}
+                \item Случайная величина
+                \item Математическое ожидание
+                \[
+                    \E (\xi) = \int\limits_{-\infty}^{+\infty} xf_{\xi}(x) dx
+                \]
+                \item Дисперсия
+            \end{itemize}
+        \end{frame}
 
 
     \end{document}
