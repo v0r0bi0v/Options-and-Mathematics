@@ -132,26 +132,28 @@
 
         \begin{frame}{Базовые понятия}
             \begin{itemize}
-                \item Случайная величина
+                \begin{frame}{Базовые понятия}
+                    \begin{randomvariable*}
+                        
+                    \end{randomvariable*}
             \end{itemize}
         \end{frame}
 
         \begin{frame}{Базовые понятия}
             \begin{randomvariable*}
-                ...
+                \begin{itemize}
+                    \item Математическое ожидание
+                    \[
+                        \E (\xi) = \int\limits_{-\infty}^{+\infty} xf_{\xi}(x) dx
+                    \]
+                    \item Дисперсия
+                    \[
+                        \D (\xi) = \E\left((\xi - \E \xi)^2\right) \left( = \sum\limits_{i\in I} x_i \cdot \P(\xi = x_i) \right)
+                    \]
+                    \item
+                \end{itemize}
             \end{randomvariable*}
-            \begin{itemize}
-                \item Случайная величина
-                \item Математическое ожидание
-                \[
-                    \E (\xi) = \int\limits_{-\infty}^{+\infty} xf_{\xi}(x) dx
-                \]
-                \item Дисперсия
-                \[
-                    \D (\xi) = \E\left((\xi - \E \xi)^2\right) \left( = \sum\limits_{i\in I} x_i \cdot \P(\xi = x_i) \right)
-                \]
-                \item
-            \end{itemize}
+
         \end{frame}
 
         \begin{Что такое опцион}
