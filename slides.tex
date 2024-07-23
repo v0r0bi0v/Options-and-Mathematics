@@ -143,11 +143,11 @@
                 \begin{itemize}
                     \item Математическое ожидание
                     \[
-                        \E (\xi) = \int\limits_{-\infty}^{+\infty} xf_{\xi}(x) dx
+                        \E \left[\xi\right] = \int\limits_{-\infty}^{+\infty} xf_{\xi}(x) dx
                     \]
                     \item Дисперсия
                     \[
-                        \D (\xi) = \E\left((\xi - \E \xi)^2\right) \left( = \sum\limits_{i\in I} x_i \cdot \P(\xi = x_i) \right)
+                        \D \left[\xi\right] = \E\left[(\xi - \E \xi)^2\right] \left( = \sum\limits_{i\in I} x_i \cdot \P(\xi = x_i) \right)
                     \]
                 \end{itemize}
             \end{randomvariable*}
@@ -187,6 +187,19 @@
                 Контракт, дающий право (но не обязательство) купить (колл-опцион) или продать (пут-опцион) базовый актив по заранее установленной цене в определенную дату в будущем.
             \end{option*}
         \end{frame}
+
+        \begin{Расчет стоимости}
+            \begin{itemize}
+                \item Выплата по деривативу является случайной величиной
+                \item Нам нужно найти параметры этой случайной величины
+            \end{itemize}
+            \begin{itemize}
+                \item Фьючерс:
+                \[
+                    \mathrm{Price} = \E \left[  \right]
+                \]
+            \end{itemize}
+        \end{Расчет стоимости}
 
 
     \end{document}
