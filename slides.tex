@@ -21,6 +21,7 @@
 
 \newcommand{\E}{\ensuremath{\mathbb{E}}}
 \newcommand{\D}{\ensuremath{\mathbb{D}}}
+\newcommand{\P}{\ensuremath{\mathbb{P}}}
 \newcommand{\R}{\ensuremath{\mathbb{R}}}
 \newcommand{\Z}{\ensuremath{\mathbb{Z}}}
 \newcommand{\Q}{\ensuremath{\mathbb{Q}}}
@@ -177,9 +178,9 @@
                 \]
                 \item Дисперсия
                 \[
-                    \D (\xi) = \E((\xi - \E \xi)^2)
+                    \D (\xi) = \E((\xi - \E \xi)^2) \left( \sum\limits_{i\in I} x_i \cdot \P(\xi = x_i) \right)
                 \]
-
+                \item
             \end{itemize}
         \end{frame}
 
